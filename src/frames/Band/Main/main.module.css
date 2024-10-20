@@ -1,0 +1,73 @@
+.band {
+    margin-top: 8px;
+    padding-bottom: 32px;
+}
+.band .banner {
+    background: linear-gradient(180deg, #81bff3 0%, #3b78cb 100%);
+    border-radius: 16px;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 10px;
+}
+.band .banner .icon {
+    width: 74px;
+    height: 74px;
+    background-image: url("../../../assets/images/band-banner-icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.band .banner .title {
+    max-width: 121px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+.band .features {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.band .features .item {
+    background-color: #131313;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 16px;
+}
+.band .features .item .styled-icon {
+    width: 24px;
+    height: 24px;
+}
+.band .features .item .info .name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #fff;
+}
+.band .features .item .info .description {
+    font-weight: 400;
+    line-height: 1.43;
+    font-size: 12px;
+    color: #6e6e6e;
+}
+.band .invite {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+.band .invite .invite-share {
+    width: 100%;
+}
+.band .invite .invite-copy {
+    width: 48px;
+    flex-shrink: 0;
+}

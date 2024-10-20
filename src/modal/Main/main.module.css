@@ -1,0 +1,77 @@
+.bottom-modal {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 12;
+}
+.bottom-modal .bottom-modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.bottom-modal.bottom-modal-is-auth .bottom-modal-backdrop {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.bottom-modal.bottom-modal-is-guest .bottom-modal-backdrop {
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(13, 41, 40, 0.5);
+}
+.bottom-modal .bottom-modal-container {
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+    box-shadow: 0 15px 45px 0 rgba(0, 0, 0, 0.25);
+    background-color: #000;
+    border-radius: 24px 24px 0 0;
+    max-height: 82%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+}
+.bottom-modal .bottom-modal-container .bottom-modal-body {
+    height: 100%;
+}
+.bottom-modal[data-current-modal="game-select-track"] .bottom-modal-container .bottom-modal-body {
+    padding: 20px 20px 0 20px;
+}
+.bottom-modal[data-current-modal="edit-avatar"] .bottom-modal-container .bottom-modal-body {
+    padding: 20px 20px var(--main-offset-bottom) 20px;
+}
+.bottom-modal .bottom-modal-container .bottom-modal-body .bottom-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.bottom-modal .bottom-modal-container .bottom-modal-body .bottom-modal-header .bottom-modal-header-title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.bottom-modal .bottom-modal-container .bottom-modal-body .bottom-modal-header .bottom-modal-header-exit {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom-modal .bottom-modal-container .bottom-modal-body .bottom-modal-header .bottom-modal-header-exit .styled-icon {
+    width: 100%;
+    height: 100%;
+}
+.bottom-modal .bottom-modal-content {
+    position: relative;
+}

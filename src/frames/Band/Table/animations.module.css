@@ -1,0 +1,83 @@
+.invited-list-title-enter-from,
+.invited-list-title-leave-to {
+    opacity: 0;
+    transform: translateY(-15px);
+}
+.invited-list-title-enter-to,
+.invited-list-title-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.invited-list-title-enter-active,
+.invited-list-title-leave-active {
+    transition: all 550ms ease-in-out;
+}
+
+.invited-list-of-users-enter-from,
+.invited-list-of-users-leave-to {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.invited-list-of-users-enter-to,
+.invited-list-of-users-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.invited-list-of-users-enter-active,
+.invited-list-of-users-leave-active {
+    transition: all 400ms ease-in-out;
+}
+
+.invited-list-pagination-arrow-left-enter-from,
+.invited-list-pagination-arrow-left-leave-to {
+    transform: translateX(-30px);
+}
+.invited-list-pagination-arrow-left-enter-to,
+.invited-list-pagination-arrow-left-leave-from {
+    transform: translateX(0);
+}
+.invited-list-pagination-arrow-left-enter-active,
+.invited-list-pagination-arrow-left-leave-active {
+    transition: all 500ms ease-in-out;
+}
+
+.invited-list-pagination-arrow-right-enter-from,
+.invited-list-pagination-arrow-right-leave-to {
+    transform: translateX(30px);
+}
+.invited-list-pagination-arrow-right-enter-to,
+.invited-list-pagination-arrow-right-leave-from {
+    transform: translateX(0);
+}
+.invited-list-pagination-arrow-right-enter-active,
+.invited-list-pagination-arrow-right-leave-active {
+    transition: all 500ms ease-in-out;
+}
+
+.invited-list-pagination-numbers-enter-from,
+.invited-list-pagination-numbers-leave-to {
+    opacity: 0;
+}
+.invited-list-pagination-numbers-enter-to,
+.invited-list-pagination-numbers-leave-from {
+    opacity: 1;
+}
+.invited-list-pagination-numbers-enter-active,
+.invited-list-pagination-numbers-leave-active {
+    transition: all 500ms ease-in-out;
+}
+
+.invited-list-loading-enter-from,
+.invited-list-loading-leave-to {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.invited-list-loading-enter-to,
+.invited-list-loading-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.invited-list-loading-enter-active,
+.invited-list-loading-leave-active {
+    transition: all 400ms ease-in-out;
+}

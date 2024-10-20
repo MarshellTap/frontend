@@ -1,0 +1,25 @@
+.animation-start-game {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.animation-start-game .animation-num {
+    pointer-events: none;
+    user-select: none;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+.animation-start-game .animation-num:not(.text-num) {
+    font-size: 102px;
+}
+.animation-start-game .animation-num.text-num {
+    font-size: 54px;
+}

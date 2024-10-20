@@ -1,0 +1,12 @@
+.tasks-loading-enter-from,
+.tasks-loading-leave-to {
+    opacity: 0;
+}
+.tasks-loading-enter-to,
+.tasks-loading-leave-from {
+    opacity: 1;
+}
+.tasks-loading-enter-active,
+.tasks-loading-leave-active {
+    transition: all 300ms ease-in-out;
+}

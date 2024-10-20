@@ -1,0 +1,19 @@
+.landscape-error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 40px);
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    z-index: 999999;
+    justify-content: center;
+    padding: 20px;
+}
+.landscape-error .text {
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}

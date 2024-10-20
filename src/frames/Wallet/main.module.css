@@ -1,0 +1,62 @@
+.wallet {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.wallet .wallet-icon {
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+    background-color: #131313;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wallet .wallet-icon .styled-icon {
+    width: 34px;
+    height: 34px;
+}
+.wallet .coming-text {
+    margin-top: 8px;
+}
+.wallet .coming-text .name,
+.wallet .coming-text .describe {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 156%;
+    text-align: center;
+    color: #fff;
+}
+.wallet .wallet-buttons {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    justify-content: center;
+}
+.wallet .wallet-buttons .button-logout {
+    width: 48px;
+    padding: 0;
+    height: 48px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wallet .wallet-buttons .button-logout .styled-icon {
+    width: 30px;
+    height: 30px;
+}
+.wallet .wallet-buttons .button-wallet-connect {
+    width: fit-content;
+    min-width: 210px;
+    padding: 0 20px;
+}

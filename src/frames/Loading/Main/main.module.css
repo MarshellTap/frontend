@@ -1,0 +1,71 @@
+.loading-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.loading-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../../assets/images/background-1.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+.loading-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 0%, rgba(0, 120, 126, 0.85) 100%);
+    position: relative;
+}
+.loading-content .loading-circle {
+    position: absolute;
+    z-index: 1;
+    background-image: url("../../../assets/images/game-circle-loader.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    transform: scale(1.3) rotate(0deg);
+    transition: opacity 300ms ease-in-out;
+    animation: loadingRotateCircleDecoration 2000ms linear infinite;
+}
+@keyframes loadingRotateCircleDecoration {
+    from {
+        transform: scale(1.3) rotate(0deg);
+    }
+    to {
+        transform: scale(1.3) rotate(360deg);
+    }
+}
+.loading-content .loading-circle:not(.loading-circle-animation-stop) {
+    opacity: .6;
+}
+.loading-content .loading-circle.loading-circle-animation-not-loading {
+    opacity: .15;
+}
+.loading-content .loading-circle.loading-circle-animation-stop {
+    animation-play-state: paused;
+}
+.loading-body {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}

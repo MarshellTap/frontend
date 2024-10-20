@@ -1,0 +1,42 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out;
+    padding: 12px 0;
+    width: 100%;
+}
+.item .styled-icon {
+    width: 16px;
+    height: 16px;
+}
+.item .styled-icon defs stop {
+    transition: stop-color 200ms ease-in-out;
+}
+.item .title {
+    text-align: center;
+    transition: color 200ms ease-in-out;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+}
+.item:not(.active) {
+    opacity: 0.3;
+}
+.item .title:after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(180deg, #00cdd3 0%, #018297 100%);
+    border-radius: 12px 12px 0 0;
+    height: 2px;
+    transition: opacity 200ms ease-in-out;
+}
+.item:not(.active) .title:after {
+    opacity: 0;
+}

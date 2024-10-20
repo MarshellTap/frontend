@@ -1,0 +1,55 @@
+.list-of-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.list-of-buttons .button {
+    width: 100%;
+    border-radius: 14px;
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    z-index: 11;
+    position: relative;
+}
+
+.list-of-buttons .button.button-delete {
+    background-color: rgba(255, 174, 174, 0.15);
+    color: #ff2f2f;
+}
+
+.list-of-buttons .button.button-add {
+    background: linear-gradient(180deg, #00cdd3 0%, #018297 100%);
+    color: #fff;
+}
+
+.list-of-buttons .button.button-add:after {
+    border-radius: 14px;
+    background: linear-gradient(180deg, #42E8EF 0%, #108998 100%) border-box;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+}
+
+.list-of-buttons .button.button-cancel {
+    background-color: #121d1d;
+    color: #fff;
+}
+
+.list-of-buttons .edit-avatar-add {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.list-of-buttons .edit-avatar-add input[type="file"] {
+    width: 0;
+    position: absolute;
+    top: 0;
+    left: -99999px;
+    height: 0;
+}

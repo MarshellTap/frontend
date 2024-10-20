@@ -1,0 +1,20 @@
+:root {
+    --circle-loader-border-size: 4px;
+}
+.loader {
+    border: var(--circle-loader-border-size) solid rgba(255, 255, 255, .08);
+    border-bottom-color: rgba(255, 255, 255, .15);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation360 700ms linear infinite;
+    flex-shrink: 0;
+}
+@keyframes rotation360 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

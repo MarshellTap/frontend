@@ -1,0 +1,138 @@
+.invited-list {
+    margin-top: 15px;
+}
+.invited-list .title {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+.invited-list .title .amount {
+    color: rgba(255, 255, 255, 0.45);
+}
+.invited-list .list-of-users {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.invited-list .pagination {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.invited-list .pagination .button {
+    border-radius: 14px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: #131313;
+}
+.invited-list .pagination .button:not(.button-arrow) {
+    width: 38px;
+}
+.invited-list .pagination .button.button-arrow {
+    padding: 0 12px;
+    column-gap: 4px;
+    transition: opacity 200ms ease-in-out;
+}
+.invited-list .pagination .button.button-arrow:disabled {
+    opacity: .4;
+}
+.invited-list .pagination .button.button-arrow .name {
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    color: #6e6e6e;
+    z-index: 11;
+    position: relative;
+}
+.invited-list .pagination .button:after {
+    border-radius: 14px;
+}
+.invited-list .pagination .button:not(.active):after {
+    background: rgba(255, 255, 255, 0.05) border-box;
+}
+.invited-list .pagination .button.active:after {
+    background: linear-gradient(180deg, #42E8EF 0%, #108998 100%) border-box;
+}
+.invited-list .pagination .button .styled-icon {
+    z-index: 11;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.invited-list .pagination .button .amount {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: #6e6e6e;
+    z-index: 11;
+    position: relative;
+}
+.invited-list .pagination .button.active .amount {
+    color: #fff;
+}
+.invited-list .pagination .button.active {
+    background: linear-gradient(180deg, #00cdd3 0%, #018297 100%);
+}
+.invited-list .pagination .pagination-numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+}
+.invited-list .invited-loading {
+    background-color: #131313;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+.invited-list .list-of-users .empty {
+    background-color: #131313;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #6e6e6e;
+}
+.invited-list .list-of-users .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.invited-list .list-of-users .loading:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+}
+.invited-list .list-of-users .loading .some-loader {
+    z-index: 11;
+    position: absolute;
+}

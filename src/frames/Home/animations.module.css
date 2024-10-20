@@ -1,0 +1,74 @@
+.home-user-avatar-enter-from,
+.home-user-avatar-leave-to {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+.home-user-avatar-enter-to,
+.home-user-avatar-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.home-user-avatar-enter-active,
+.home-user-avatar-leave-active {
+    transition: all 400ms ease-in-out;
+}
+
+.home-user-username-enter-from,
+.home-user-username-leave-to {
+    opacity: 0;
+    transform: translateY(-75px);
+}
+.home-user-username-enter-to,
+.home-user-username-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.home-user-username-enter-active,
+.home-user-username-leave-active {
+    transition: all 500ms ease-in-out;
+}
+
+.home-user-balance-enter-from,
+.home-user-balance-leave-to {
+    opacity: 0;
+    transform: translateY(50px);
+}
+.home-user-balance-enter-to,
+.home-user-balance-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.home-user-balance-enter-active,
+.home-user-balance-leave-active {
+    transition: all 500ms ease-in-out;
+}
+
+.home-game-card-game-enter-from,
+.home-game-card-game-leave-to {
+    opacity: 0;
+    transform: translateY(55%);
+}
+.home-game-card-game-enter-to,
+.home-game-card-game-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.home-game-card-game-enter-active,
+.home-game-card-game-leave-active {
+    transition: all 400ms ease-in-out;
+}
+
+.home-game-button-enter-from,
+.home-game-button-leave-to {
+    opacity: 0;
+    transform: translateY(55%);
+}
+.home-game-button-enter-to,
+.home-game-button-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.home-game-button-enter-active,
+.home-game-button-leave-active {
+    transition: all 400ms ease-in-out;
+}

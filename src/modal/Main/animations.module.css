@@ -1,0 +1,25 @@
+.bottom-modal-backdrop-enter-from,
+.bottom-modal-backdrop-leave-to {
+    opacity: 0;
+}
+.bottom-modal-backdrop-enter-to,
+.bottom-modal-backdrop-leave-from {
+    opacity: 1;
+}
+.bottom-modal-backdrop-enter-active,
+.bottom-modal-backdrop-leave-active {
+    transition: all 200ms ease-in-out;
+}
+
+.bottom-modal-container-enter-from,
+.bottom-modal-container-leave-to {
+    transform: translateY(100%);
+}
+.bottom-modal-container-enter-to,
+.bottom-modal-container-leave-from {
+    transform: translateY(0);
+}
+.bottom-modal-container-enter-active,
+.bottom-modal-container-leave-active {
+    transition: all 200ms ease-in-out;
+}

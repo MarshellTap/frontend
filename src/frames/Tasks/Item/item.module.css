@@ -1,0 +1,93 @@
+.item {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    background-color: #131313;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item .left-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    padding-right: 8px;
+}
+.item .left-blocks .item-icon {
+    width: 34px;
+    height: 34px;
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+    background-color: #252323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
+.item .left-blocks .item-icon .styled-icon {
+    width: 16px;
+    height: 16px;
+}
+.item .left-blocks .info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 3px;
+    flex-direction: column;
+}
+.item .left-blocks .info .title {
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+}
+.item .left-blocks .info .description {
+    font-weight: 500;
+    font-size: 10px;
+    color: #6e6e6e;
+}
+.item .right-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 8px;
+}
+.item .right-buttons .button {
+    height: 34px;
+    border-radius: 8px;
+    padding: 0 15px;
+}
+.item .right-buttons .button:disabled {
+    opacity: .5;
+}
+.item .right-buttons .button.button-gradient:disabled:after {
+    opacity: .2 !important;
+}
+.item .right-buttons .button .name {
+    color: #fff;
+    font-weight: 500;
+    z-index: 11;
+    font-size: 12px;
+}
+.item .right-buttons .button.button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item .right-buttons .button.button-icon .styled-icon {
+    width: 20px;
+    height: 20px;
+}
+.item .right-buttons .button.button-start {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.item .right-buttons .button.button-gradient {
+    position: relative;
+    background: linear-gradient(180deg, #00cdd3 0%, #018297 100%);
+}
+.item .right-buttons .button.button-gradient:after {
+    border-radius: 8px;
+    transition: none;
+    background: linear-gradient(180deg, #42E8EF 0%, #108998 100%) border-box;
+}

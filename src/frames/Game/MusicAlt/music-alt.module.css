@@ -1,0 +1,42 @@
+:root {
+    --drop-game-animation-note-rotate: 0deg;
+}
+.music-alt {
+    opacity: 1;
+    position: absolute;
+    animation: fadePersonaMusicAlt 800ms ease-in-out forwards;
+}
+@keyframes fadePersonaMusicAlt {
+    from {
+        opacity: 1;
+        transform: rotate(var(--drop-game-animation-note-rotate)) translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: rotate(var(--drop-game-animation-note-rotate)) translateY(-250px);
+    }
+}
+.music-alt .music-alt-icon {
+    background-image: url("../../../assets/images/drop-games-music-alt.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.music-alt.size-s {
+    width: 23px;
+    height: 21px;
+}
+.music-alt.size-m {
+    width: 29px;
+    height: 28px;
+}
+.music-alt.size-l {
+    width: 38px;
+    height: 41px;
+}
+.music-alt.size-xl {
+    width: 51px;
+    height: 47px;
+}

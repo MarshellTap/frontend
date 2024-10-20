@@ -1,0 +1,29 @@
+.tasks-header-title-enter-from,
+.tasks-header-title-leave-to {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.tasks-header-title-enter-to,
+.tasks-header-title-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.tasks-header-title-enter-active,
+.tasks-header-title-leave-active {
+    transition: all 300ms ease-in-out;
+}
+
+.tasks-header-description-enter-from,
+.tasks-header-description-leave-to {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.tasks-header-description-enter-to,
+.tasks-header-description-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.tasks-header-description-enter-active,
+.tasks-header-description-leave-active {
+    transition: all 350ms ease-in-out;
+}

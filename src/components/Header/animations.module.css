@@ -1,0 +1,14 @@
+.header-enter-from,
+.header-leave-to {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.header-enter-to,
+.header-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.header-enter-active,
+.header-leave-active {
+    transition: all 300ms ease-in-out;
+}

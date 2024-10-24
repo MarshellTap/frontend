@@ -187,7 +187,7 @@ onBeforeMount(() => {
   --main-offset-bottom: 0px;
   --more-offset-bottom: 0px;
   --modal-offset-bottom: 0px;
-}щ
+}
 .main-container {
   width: 100%;
   height: 100%;

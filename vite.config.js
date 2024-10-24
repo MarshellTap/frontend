@@ -5,7 +5,7 @@ import { resolve } from 'path';
 export default defineConfig({
 	plugins: [vue(),],
 	server: {
-		open: true,
+		open: false,
 		// port: 443,
 		// host: 'marshelltap.com'
 		// https: {

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /root/marshelltap/frontend || exit
+cd /var/www/frontend
 
 echo "Pulling latest changes from GitHub..."
 git pull origin main

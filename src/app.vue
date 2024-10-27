@@ -155,11 +155,11 @@ onBeforeMount(() => {
         '--more-offset-bottom': offsetMoreBottom
        }"
   >
-    <!-- <div v-if="!isMobile" :class="{ [$style['not-mobile-device']]: true }">
+    <div v-if="!isMobile" :class="{ [$style['not-mobile-device']]: true }">
       <div :class="{ [$style['logo']]: true }"></div>
       <span :class="{ [$style['text']]: true }">Login is only allowed from mobile devices</span>
-    </div> -->
-    <template >
+    </div>
+    <template v-else>
       <Sprite />
       <template v-if="!errorAvailable">
         <Layout v-if="!status" />

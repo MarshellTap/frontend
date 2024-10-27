@@ -1,6 +1,6 @@
 skeleton.png
 size:491,523
-filter:Nearest, Nearest
+filter:Linear,Linear
 pma:true
 guitar
 bounds:257,389,215,132

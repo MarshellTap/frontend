@@ -50,8 +50,8 @@ const webAppViewport = useWebAppViewport()
 
 const store = useStore()
 
-// const isMobile = ref(true)
-const isMobile = computed(() => webApp.platform && (webApp.platform === 'ios' || webApp.platform === 'android'))
+const isMobile = ref(true)
+// const isMobile = computed(() => webApp.platform && (webApp.platform === 'ios' || webApp.platform === 'android'))
 const errorAvailable = computed(() => store.state.error.status)
 const status = computed(() => store.state.preloader.status)
 const notifications = computed(() => store.state.notifications)
@@ -155,11 +155,11 @@ onBeforeMount(() => {
         '--more-offset-bottom': offsetMoreBottom
        }"
   >
-    <div v-if="!isMobile" :class="{ [$style['not-mobile-device']]: true }">
+    <!-- <div v-if="!isMobile" :class="{ [$style['not-mobile-device']]: true }">
       <div :class="{ [$style['logo']]: true }"></div>
       <span :class="{ [$style['text']]: true }">Login is only allowed from mobile devices</span>
-    </div>
-    <template v-else>
+    </div> -->
+    <template >
       <Sprite />
       <template v-if="!errorAvailable">
         <Layout v-if="!status" />

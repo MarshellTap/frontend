@@ -76,8 +76,8 @@ let spinePlayer = null;
 const initializePlayer = async (container) => {
     if (spinePlayer) return;
     spinePlayer = new spine.SpinePlayer(container, {
-        skeleton: '/assets/spine/skeleton.json',
-        atlas: '/assets/spine/skeleton.atlas',
+        skeleton: skeletonJson,
+        atlas: skeletonAtlas,
         animations: ['idle', 'solo_R', 'solo_M', 'solo_X'],
         showControls: false,
         backgroundColor: null,

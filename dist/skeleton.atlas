@@ -1,7 +1,7 @@
 skeleton.png
 size:491,523
 filter:Linear,Linear
-pma:true
+pma:false
 guitar
 bounds:257,389,215,132
 offsets:13,0,228,132

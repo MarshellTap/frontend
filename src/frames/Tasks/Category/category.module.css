@@ -1,0 +1,28 @@
+.tasks-category {
+    margin-bottom: 30px;
+    width: 100%;
+    overflow: hidden;
+}
+.tasks-category .tasks-header {
+    margin-bottom: 12px;
+}
+.tasks-category .tasks-header .title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 6px;
+}
+.tasks-category .tasks-header .title .amount {
+    color: rgba(255, 255, 255, 0.45);
+}
+.tasks-category .tasks-header .description {
+    font-weight: 500;
+    font-size: 12px;
+    color: #6e6e6e;
+}
+.tasks-category .tasks-list {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}

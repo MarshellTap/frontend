@@ -1,0 +1,13 @@
+.tasks {
+    margin-top: 8px;
+    padding-bottom: 32px;
+}
+.tasks.now-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.tasks .tasks-main-category:last-child {
+    margin-bottom: 0;
+}

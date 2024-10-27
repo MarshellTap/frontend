@@ -1,0 +1,59 @@
+.loading-daily-icon-enter-from,
+.loading-daily-icon-leave-to {
+    opacity: 0;
+    transform: translateY(100px);
+}
+.loading-daily-icon-enter-to,
+.loading-daily-icon-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.loading-daily-icon-enter-active,
+.loading-daily-icon-leave-active {
+    transition: all 300ms ease-in-out;
+}
+
+.loading-daily-title-enter-from,
+.loading-daily-title-leave-to {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+.loading-daily-title-enter-to,
+.loading-daily-title-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.loading-daily-title-enter-active,
+.loading-daily-title-leave-active {
+    transition: all 400ms ease-in-out;
+}
+
+.loading-daily-amount-enter-from,
+.loading-daily-amount-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+}
+.loading-daily-amount-enter-to,
+.loading-daily-amount-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.loading-daily-amount-enter-active,
+.loading-daily-amount-leave-active {
+    transition: all 500ms ease-in-out;
+}
+
+.loading-bottom-enter-from,
+.loading-bottom-leave-to {
+    opacity: 0;
+    transform: translateY(-80px);
+}
+.loading-bottom-enter-to,
+.loading-bottom-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.loading-bottom-enter-active,
+.loading-bottom-leave-active {
+    transition: all 600ms ease-in-out;
+}

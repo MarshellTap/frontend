@@ -1,0 +1,33 @@
+.start-game-enter-from,
+.start-game-leave-to {
+    opacity: 0;
+}
+.start-game-enter-to,
+.start-game-leave-from {
+    opacity: 1;
+}
+.start-game-enter-active {
+    transition: all 300ms ease-in-out;
+}
+.start-game-leave-active {
+    transition: all 1200ms ease-in-out;
+}
+
+.animation-num-enter-from {
+    transform: scale(.5);
+    opacity: 0;
+}
+.animation-num-leave-to,
+.animation-num-leave-from {
+    display: none;
+}
+.animation-num-enter-to {
+    transform: scale(1);
+    opacity: 1;
+}
+.animation-num-enter-active {
+    transition: all 700ms ease-in-out;
+}
+.animation-num-leave-active {
+    transition: none;
+}

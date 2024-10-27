@@ -1,0 +1,54 @@
+.user-item {
+    background-color: #131313;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 8px;
+}
+.user-item .avatar {
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    background-image: url("../../../assets/images/no-image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.user-item .info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 3px;
+}
+.user-item .info .name {
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+}
+.user-item .info .amount-value {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 4px;
+}
+.user-item .info .amount-value .name {
+    font-size: 12px;
+    color: #6e6e6e;
+    font-weight: 400;
+}
+.user-item .info .amount-value .styled-icon {
+    width: 18px;
+    height: 18px;
+}
+.user-item .info .amount-value .amount {
+    font-weight: 600;
+    font-size: 12px;
+    background: linear-gradient(180deg, #00cdd3 0%, #018297 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,59 @@
+.wallet-big-icon-enter-from,
+.wallet-big-icon-leave-to {
+    opacity: 0;
+    transform: translateY(50px);
+}
+.wallet-big-icon-enter-to,
+.wallet-big-icon-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.wallet-big-icon-enter-active,
+.wallet-big-icon-leave-active {
+    transition: all 300ms ease-in-out;
+}
+
+.wallet-coming-text-name-enter-from,
+.wallet-coming-text-name-leave-to {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.wallet-coming-text-name-enter-to,
+.wallet-coming-text-name-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.wallet-coming-text-name-enter-active,
+.wallet-coming-text-name-leave-active {
+    transition: all 400ms ease-in-out;
+}
+
+.wallet-coming-text-describe-enter-from,
+.wallet-coming-text-describe-leave-to {
+    opacity: 0;
+    transform: translateY(-25px);
+}
+.wallet-coming-text-describe-enter-to,
+.wallet-coming-text-describe-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.wallet-coming-text-describe-enter-active,
+.wallet-coming-text-describe-leave-active {
+    transition: all 450ms ease-in-out;
+}
+
+.wallet-buttons-enter-from,
+.wallet-buttons-leave-to {
+    opacity: 0;
+    transform: translateY(-35px);
+}
+.wallet-buttons-enter-to,
+.wallet-buttons-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.wallet-buttons-enter-active,
+.wallet-buttons-leave-active {
+    transition: all 500ms ease-in-out;
+}

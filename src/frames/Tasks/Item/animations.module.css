@@ -1,0 +1,18 @@
+:root {
+    --tasks-item-animation-ms: 200ms;
+}
+
+.item-enter-from,
+.item-leave-to {
+    opacity: .6;
+    transform: scale(.9) translateY(70px);
+}
+.item-enter-to,
+.item-leave-from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+.item-enter-active,
+.item-leave-active {
+    transition: all var(--tasks-item-animation-ms) ease-in-out;
+}

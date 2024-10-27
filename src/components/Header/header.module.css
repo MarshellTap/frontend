@@ -1,0 +1,93 @@
+.game-header {
+    width: calc(100% - 30px);
+    position: relative;
+    z-index: 99;
+    margin: 15px;
+}
+
+.game-header .game-header-content {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    background-color: #131313;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.game-header .game-header-content .balance {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.game-header .game-header-content .balance .balance-icon {
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+    background-color: #252323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    flex-shrink: 0;
+    border-radius: 12px;
+}
+.game-header .game-header-content .balance .balance-icon .styled-icon {
+    width: 17px;
+    height: 17px;
+}
+.game-header .game-header-content .balance .balance-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.game-header .game-header-content .balance .balance-info .balance-name {
+    font-weight: 500;
+    font-size: 10px;
+    color: #6e6e6e;
+}
+.game-header .game-header-content .balance .balance-info .balance-amount {
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+}
+.game-header .game-header-content .blocks {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    column-gap: 8px;
+}
+.game-header .game-header-content .blocks .new-tasks {
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+    display: flex;
+    background: linear-gradient(180deg, rgba(0, 205, 211, 0.15) 0%, rgba(1, 130, 151, 0.15) 100%);
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    height: 34px;
+    padding: 0 9px;
+    border-radius: 8px;
+    width: 105px;
+    cursor: pointer;
+    position: relative;
+}
+.game-header .game-header-content .blocks .new-tasks .styled-icon {
+    width: 18px;
+    height: 18px;
+    color: #23f9ff;
+    z-index: 11;
+}
+.game-header .game-header-content .blocks .new-tasks .text {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    color: #23f9ff;
+    text-align: left;
+    z-index: 11;
+}
+.game-header .game-header-content .blocks .new-tasks:after {
+    border-radius: 8px;
+    background: linear-gradient(180deg, #42e8ef 0%, #108998 100%) border-box;
+    opacity: 0.25;
+}

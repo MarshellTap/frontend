@@ -1,0 +1,44 @@
+.loading-logo-enter-from,
+.loading-logo-leave-to {
+    opacity: 0;
+    transform: translateY(100px);
+}
+.loading-logo-enter-to,
+.loading-logo-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.loading-logo-enter-active,
+.loading-logo-leave-active {
+    transition: all 300ms ease-in-out;
+}
+
+.loading-text-enter-from,
+.loading-text-leave-to {
+    opacity: 0;
+    transform: translateY(100px);
+}
+.loading-text-enter-to,
+.loading-text-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.loading-text-enter-active,
+.loading-text-leave-active {
+    transition: all 400ms ease-in-out;
+}
+
+.loading-bottom-enter-from,
+.loading-bottom-leave-to {
+    opacity: 0;
+    transform: translateY(-80px);
+}
+.loading-bottom-enter-to,
+.loading-bottom-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.loading-bottom-enter-active,
+.loading-bottom-leave-active {
+    transition: all 600ms ease-in-out;
+}

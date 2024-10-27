@@ -1,0 +1,245 @@
+.drop-game-body {
+    padding: 15px 15px var(--main-offset-bottom) 15px;
+    width: calc(100% - 30px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 11;
+}
+.drop-game-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 11;
+}
+.drop-game-header .drop-game-header-audio-player {
+    position: absolute;
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+    background-color: rgb(0, 0, 0, .6);
+    border-radius: 12px;
+    height: 10px;
+    padding: 0 4px;
+    width: calc(100% - 38px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.drop-game-header .drop-game-header-audio-player .progress-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 12px;
+    transition: width 200ms ease-in-out;
+    background: linear-gradient(180deg, rgba(0, 205, 211, 1) 0%, rgba(1, 130, 151, 1) 100%);
+    opacity: .8;
+}
+.drop-game-header .drop-game-header-audio-player .current-time,
+.drop-game-header .drop-game-header-audio-player .total-time {
+    font-size: 6px;
+    font-weight: 600;
+    z-index: 11;
+    user-select: none;
+}
+.drop-game-header .drop-game-header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    column-gap: 10px;
+    transition: transform 300ms ease-in-out;
+}
+.drop-game-header.drop-game-header-show-audio-player .drop-game-header-main {
+    transform: translateY(18px);
+}
+.drop-game-header .drop-game-header-main .button {
+    background-color: rgba(19, 19, 19, .92);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    height: 36px;
+    padding: 0 10px 0 8px;
+    align-items: center;
+    grid-column-gap: 4px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.drop-game-header .drop-game-header-main .button .styled-icon:not([data-icon-tag="drop-game-note"]) {
+    width: 20px;
+    height: 20px;
+}
+.drop-game-header .drop-game-header-main .button .styled-icon[data-icon-tag="drop-game-note"] {
+    width: 16px;
+    height: 16px;
+}
+.drop-game-header .drop-game-header-main .button .name {
+    font-weight: 600;
+    font-size: 12px;
+    color: #6e6e6e;
+}
+.drop-game-header .drop-game-header-main .right-header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: flex-end;
+}
+.drop-game-header .drop-game-header-main .right-header .button .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.drop-game-header .drop-game-header-main .right-header .button-mini {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    column-gap: 4px;
+}
+.drop-game-header .drop-game-header-main .right-header .button-mini .styled-icon {
+    width: 16px;
+    height: 16px;
+    -webkit-filter: drop-shadow(0px 0px 5px rgb(0 0 0 / 65%));
+    filter: drop-shadow(0px 0px 5px rgb(0 0 0 / 65%));
+}
+.drop-game-header .drop-game-header-main .right-header .button-mini .name {
+    font-weight: 600;
+    font-size: 12px;
+    text-shadow: rgb(0 0 0 / 65%) 0px 0px 5px;
+    color: #fff;
+}
+.drop-game-alert {
+    position: absolute;
+    top: 120px;
+    transition: transform 200ms ease-in-out;
+}
+.drop-game-alert .drop-game-alert-content {
+    background-color: rgba(0, 0, 0, .3);
+    backdrop-filter: blur(35px);
+    -webkit-backdrop-filter: blur(35px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 14px;
+    user-select: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(255 255 255 / 70%);
+    padding: 10px 18px;
+    z-index: 11;
+    position: relative;
+}
+.drop-game-alert.drop-game-alert-scale {
+    transform: scale(1.1);
+}
+.drop-game-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+.drop-game-content .animation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11;
+    width: fit-content;
+}
+.drop-game-content .animation .list-of-notes-animations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+}
+.drop-game-content .animation .animation-tap-hint {
+    width: 75px;
+    height: 115px;
+    position: absolute;
+    right: -20px;
+    top: 135px;
+    z-index: 13;
+}
+.drop-game-content .animation .animation-tap-hint .tap-icon {
+    background-image: url("../../../assets/images/drop-game-tap.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transform: scale(.92) rotate(-45deg);
+    animation: gameHintTap 1200ms linear infinite;
+}
+@keyframes gameHintTap {
+    0% {
+        transform: scale(.92) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1) rotate(-45deg);
+    }
+    100% {
+        transform: scale(.92) rotate(-45deg);
+    }
+}
+.drop-game-content .animation .player {
+    width: 198px;
+    height: 435px;
+    z-index: 11;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 300ms ease-in-out,
+        transform 300ms ease-in-out;
+}
+.drop-game-content .animation .player canvas {
+    transform: scale(1.7);
+}
+.drop-game-content .animation .player.player-loaded {
+    opacity: 1;
+    transform: translateY(0);
+}
+.drop-game-content .balance {
+    position: absolute;
+    bottom: 0;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 11px 20px 11px 9px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 14px;
+    z-index: 12;
+    user-select: none;
+    min-width: 135px;
+}
+.drop-game-content .balance .balance-icon {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+}
+.drop-game-content .balance .balance-icon .styled-icon {
+    width: 24px;
+    height: 22px;
+}
+.drop-game-content .balance .amount {
+    font-weight: 600;
+    font-size: 36px;
+    color: #fff;
+    margin-top: -2px;
+    width: 100%;
+    text-align: center;
+}

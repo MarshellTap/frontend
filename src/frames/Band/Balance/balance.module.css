@@ -1,0 +1,96 @@
+.balance {
+    margin-top: 10px;
+    background-color: rgba(1, 189, 198, 0.15);
+    border-radius: 16px;
+    position: relative;
+    padding: 11px 16px 11px 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.balance:after {
+    border-radius: 16px;
+    background: linear-gradient(180deg, #42E8EF 0%, #108998 100%) border-box;
+}
+.balance .left-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 8px;
+    z-index: 11;
+    position: relative;
+}
+.balance .left-blocks .balance-icon {
+    background: linear-gradient(180deg, #00cdd3 0%, #018297 100%);
+    border-radius: 12px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.balance .left-blocks .balance-icon:after {
+    border-radius: 12px;
+    background: linear-gradient(180deg, #42E8EF 0%, #108998 100%) border-box;
+}
+.balance .left-blocks .balance-icon .styled-icon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    z-index: 11;
+}
+.balance .left-blocks .info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 1px;
+}
+.balance .left-blocks .info .title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    color: #7ef3fb;
+}
+.balance .left-blocks .info .amount-value {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 4px;
+}
+.balance .left-blocks .info .amount-value .styled-icon {
+    width: 18px;
+    height: 18px;
+}
+.balance .left-blocks .info .amount-value .amount {
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+}
+.balance .left-blocks .info .amount-value .amount.amount-loading {
+    animation: balanceAmountLoading 1.5s linear infinite;
+    height: 8px;
+    width: 30px;
+    background-color: rgba(255, 255, 255, .08);
+    border-radius: 12px;
+    color: transparent;
+}
+@keyframes balanceAmountLoading {
+    0%, 100% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+.balance .balance-button {
+    height: 34px;
+    width: 100px;
+    padding: 0;
+    border-radius: 8px;
+}
+.balance .balance-button:after {
+    border-radius: 8px;
+    background: linear-gradient(180deg, #42E8EF 0%, #108998 100%) border-box;
+}

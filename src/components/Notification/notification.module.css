@@ -1,0 +1,83 @@
+.notification {
+    background-color: #131313;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 12px;
+    width: calc(100% - 2px);
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+}
+.notification .notification-body {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.notification .notification-content {
+    display: flex;
+    column-gap: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+.notification .notification-content .notification-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.notification .notification-content .notification-icon .styled-icon {
+    color: #fff;
+}
+.notification:not(.notification-info) .notification-content .notification-icon .styled-icon {
+    width: 16px;
+    height: 16px;
+}
+.notification.notification-info .notification-content .notification-icon .styled-icon {
+    width: 14px;
+    height: 14px;
+}
+.notification.notification-error .notification-content .notification-icon {
+    background-color: #ed5c48;
+}
+.notification.notification-info .notification-content .notification-icon {
+    background-color: #3F49A1;
+}
+.notification.notification-warning .notification-content .notification-icon {
+    background-color: #F09D38;
+}
+.notification.notification-success .notification-content .notification-icon {
+    background-color: #8CB647;
+}
+.notification .notification-content .notification-info .title {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 137%;
+    color: #fff;
+    text-align: left;
+}
+.notification .notification-content .notification-info .message {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 140%;
+    color: #6e6e6e;
+    text-align: left;
+}
+.notification .notification-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.notification .notification-action .notification-delete {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.notification .notification-action .notification-delete .styled-icon {
+    color: rgba(117, 128, 187, 0.45);
+}

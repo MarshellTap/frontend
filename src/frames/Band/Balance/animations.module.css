@@ -1,0 +1,14 @@
+.balance-enter-from,
+.balance-leave-to {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.balance-enter-to,
+.balance-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.balance-enter-active,
+.balance-leave-active {
+    transition: all 300ms ease-in-out;
+}

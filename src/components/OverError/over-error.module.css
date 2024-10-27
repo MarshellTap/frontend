@@ -1,0 +1,12 @@
+.over-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0d2928;
+    width: 100%;
+}

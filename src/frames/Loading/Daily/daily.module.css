@@ -1,0 +1,90 @@
+.loading-daily-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: calc(-83px - var(--more-offset-bottom));
+}
+.loading-daily-content .loading-daily-icon {
+    width: 148px;
+    height: 148px;
+    flex-shrink: 0;
+    background-image: url("../../../assets/images/daily-band-rewards-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.loading-daily-content .loading-daily-title {
+    margin-top: 6px;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+}
+.loading-daily-content .loading-daily-amount {
+    margin-top: 20px;
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 160px;
+    padding: 20px;
+}
+.loading-daily-content .loading-daily-amount .token-icon {
+    width: 48px;
+    height: 48px;
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.loading-daily-content .loading-daily-amount .token-icon .styled-icon {
+    width: 24px;
+    height: 24px;
+}
+.loading-daily-content .loading-daily-amount .amount {
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    margin-top: 12px;
+    text-align: center;
+}
+.loading-daily-content .loading-daily-amount .name {
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.65;
+    margin-top: 4px;
+}
+.loading-bottom {
+    width: calc(100% - 90px);
+    position: absolute;
+    bottom: var(--more-offset-bottom);
+    left: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loading-bottom .loading-bottom-info {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px 12px 0 0;
+    backdrop-filter: blur(45px);
+    -webkit-backdrop-filter: blur(45px);
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    padding: 10px 30px;
+    width: fit-content;
+}

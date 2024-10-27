@@ -1,0 +1,119 @@
+.drop-game-header-audio-player-enter-from,
+.drop-game-header-audio-player-leave-to {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.drop-game-header-audio-player-enter-to,
+.drop-game-header-audio-player-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.drop-game-header-audio-player-enter-active,
+.drop-game-header-audio-player-leave-active {
+    transition: all 350ms ease-in-out;
+}
+
+.drop-game-header-main-button-home-enter-from,
+.drop-game-header-main-button-home-leave-to {
+    opacity: 0;
+    transform: translateY(-150%);
+}
+.drop-game-header-main-button-home-enter-to,
+.drop-game-header-main-button-home-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.drop-game-header-main-button-home-enter-active,
+.drop-game-header-main-button-home-leave-active {
+    transition: all 400ms ease-in-out;
+}
+
+.drop-game-header-main-select-track-enter-from,
+.drop-game-header-main-select-track-leave-to {
+    opacity: 0;
+    transform: translateY(-150%);
+}
+.drop-game-header-main-select-track-enter-to,
+.drop-game-header-main-select-track-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.drop-game-header-main-select-track-enter-active,
+.drop-game-header-main-select-track-leave-active {
+    transition: all 400ms ease-in-out;
+}
+
+.drop-game-header-main-right-mini-enter-from,
+.drop-game-header-main-right-mini-leave-to {
+    opacity: 0;
+    transform: translateY(-150%);
+}
+.drop-game-header-main-right-mini-enter-to,
+.drop-game-header-main-right-mini-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.drop-game-header-main-right-mini-enter-active,
+.drop-game-header-main-right-mini-leave-active {
+    transition: all 450ms ease-in-out;
+}
+
+.drop-game-alert-content-enter-from,
+.drop-game-alert-content-leave-to {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+.drop-game-alert-content-enter-to,
+.drop-game-alert-content-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.drop-game-alert-content-enter-active,
+.drop-game-alert-content-leave-active {
+    transition: all 300ms ease-in-out;
+}
+
+.drop-game-content-animation-tap-hint-enter-from,
+.drop-game-content-animation-tap-hint-leave-to {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.drop-game-content-animation-tap-hint-enter-to,
+.drop-game-content-animation-tap-hint-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.drop-game-content-animation-tap-hint-enter-active,
+.drop-game-content-animation-tap-hint-leave-active {
+    transition: all 350ms ease-in-out;
+}
+
+.drop-game-content-animation-player-enter-from,
+.drop-game-content-animation-player-leave-to {
+    opacity: 0;
+    transform: translateY(30px);
+}
+.drop-game-content-animation-player-enter-to,
+.drop-game-content-animation-player-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.drop-game-content-animation-player-enter-active,
+.drop-game-content-animation-player-leave-active {
+    transition: all 450ms ease-in-out;
+}
+
+.drop-game-animation-balance-enter-from,
+.drop-game-animation-balance-leave-to {
+    opacity: 0;
+    transform: translateY(35px);
+}
+.drop-game-animation-balance-enter-to,
+.drop-game-animation-balance-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.drop-game-animation-balance-enter-active,
+.drop-game-animation-balance-leave-active {
+    transition: all 400ms ease-in-out;
+}

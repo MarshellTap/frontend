@@ -1,0 +1,14 @@
+.bottom-menu-enter-from,
+.bottom-menu-leave-to {
+    opacity: 0;
+    transform: translateY(150%);
+}
+.bottom-menu-enter-to,
+.bottom-menu-leave-from {
+    opacity: 1;
+    transform: translateY(0);
+}
+.bottom-menu-enter-active,
+.bottom-menu-leave-active {
+    transition: all 300ms ease-in-out;
+}

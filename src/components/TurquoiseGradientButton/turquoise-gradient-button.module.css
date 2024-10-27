@@ -1,0 +1,31 @@
+.gradient-button {
+    border-radius: 14px;
+    padding: 20px 0;
+    width: 100%;
+    background: linear-gradient(180deg, #00cdd3 0%, #018297 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    column-gap: 8px;
+    height: 48px;
+    z-index: 11;
+    transition: opacity 200ms ease-in-out;
+}
+.gradient-button:disabled {
+    opacity: 0.55;
+}
+.gradient-button .name {
+    font-weight: 800;
+    font-size: 12px;
+    position: relative;
+    z-index: 11;
+    color: #fff;
+}
+.gradient-button:not(.button-text-default) .name {
+    text-transform: uppercase;
+}
+.gradient-button:after {
+    border-radius: 14px;
+    background: linear-gradient(180deg, #42E8EF 0%, #108998 100%) border-box;
+}

@@ -10,10 +10,10 @@ import routes from "~/routes.js";
 import * as spine from "@esotericsoftware/spine-player";
 import sleep from "~/functions/sleep.js";
 
-const skeletonJson = new URL('~/assets/spine/skeleton.json', import.meta.url).href;
-const skeletonAtlas = new URL('~/assets/spine/skeleton.atlas', import.meta.url).href;
-// const skeletonJson = '/assets/spine/skeleton.json';
-// const skeletonAtlas = '/assets/spine/skeleton.atlas';
+// const skeletonJson = new URL('~/assets/spine/skeleton.json', import.meta.url).href;
+// const skeletonAtlas = new URL('~/assets/spine/skeleton.atlas', import.meta.url).href;
+const skeletonJson = '/skeleton.json';
+const skeletonAtlas = '/skeleton.atlas';
 
 const game = reactive({
     tracks: [],

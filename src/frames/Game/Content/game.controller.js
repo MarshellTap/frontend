@@ -73,6 +73,8 @@ let spinePlayer = null;
 
 const initializePlayer = async (container) => {
     if (spinePlayer) return;
+    console.log('Initializing SpinePlayer with:', skeletonJson, skeletonAtlas); // Добавьте лог
+
     spinePlayer = new spine.SpinePlayer(container, {
         skeleton: skeletonJson,
         atlas: skeletonAtlas,

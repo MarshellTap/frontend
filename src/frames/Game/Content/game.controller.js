@@ -92,7 +92,7 @@ const initializePlayer = async (container) => {
       width: 300,
       height: 675,
     },
-    premultipliedAlpha: false,
+    premultipliedAlpha: true,
   });
 };
 

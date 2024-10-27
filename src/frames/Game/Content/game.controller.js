@@ -13,8 +13,8 @@ import sleep from "~/functions/sleep.js";
 // const skeletonJson = new URL('~/assets/spine/skeleton.json', import.meta.url).href;
 // const skeletonAtlas = new URL('~/assets/spine/skeleton.atlas', import.meta.url).href;
 
-import skeletonJson from '~/assets/spine/skeleton.json';
-import skeletonAtlas from '~/assets/spine/skeleton.atlas';
+const skeletonJson = '/assets/spine/skeleton.json';
+const skeletonAtlas = '/assets/spine/skeleton.atlas';
 
 const game = reactive({
     tracks: [],

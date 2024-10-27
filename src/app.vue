@@ -61,7 +61,7 @@ const preloaderStatus = computed(() => store.state.preloader.status)
 watch(() => ({
   preloaderStatus: preloaderStatus.value,
   errorAvailable: errorAvailable.value,
-  isMobile: isMobile.value,
+  isMobile: true,
   currentPath: route.path,
   modalActive: modal.value.active
 }), (newObj) => {

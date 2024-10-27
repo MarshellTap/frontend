@@ -175,7 +175,7 @@ onUnmounted(async () => {
         </div>
       </Animation>
     </template>
-    <!-- <div :class="{ [ContentStyle['drop-game-content']]: true }">
+    <div :class="{ [ContentStyle['drop-game-content']]: true }">
       <div :class="{ [ContentStyle['animation']]: true }">
         <div :class="{ [ContentStyle['list-of-notes-animations']]: true }" v-if="!isLoading.status">
           <MusicAlt
@@ -204,6 +204,6 @@ onUnmounted(async () => {
           <span :class="{ [ContentStyle['amount']]: true }">{{ integerSpaces(game.tap.amount) }}</span>
         </div>
       </Animation>
-    </div> -->
+    </div>
   </div>
 </template>
